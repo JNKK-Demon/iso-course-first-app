@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hide_The_Bombs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h87-qu-tEf">
+                                <rect key="frame" x="96" y="472" width="182" height="30"/>
+                                <state key="normal" title="Hide the green bomb">
+                                    <color key="titleColor" red="0.41568627450000001" green="0.87058823529999996" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenBombPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hbh-48-cTc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIQ-8O-OII">
+                                <rect key="frame" x="96" y="537" width="182" height="30"/>
+                                <state key="normal" title="Hide the pink bomb">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pinkBombPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XnW-ut-UOw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="woman01" translatesAutoresizingMaskIntoConstraints="NO" id="57c-QT-ail">
+                                <rect key="frame" x="0.0" y="20" width="186" height="362"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="woman02" translatesAutoresizingMaskIntoConstraints="NO" id="ru8-YJ-cf0">
+                                <rect key="frame" x="189" y="20" width="186" height="362"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="greenBombButton" destination="h87-qu-tEf" id="Ntt-fv-8xR"/>
+                        <outlet property="greenBombImage" destination="57c-QT-ail" id="D3R-2C-9f6"/>
+                        <outlet property="pinkBombButton" destination="tIQ-8O-OII" id="xec-u1-6Ab"/>
+                        <outlet property="pinkBombImage" destination="ru8-YJ-cf0" id="CMc-na-3hF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380.5" y="359.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="woman01" width="202" height="690"/>
+        <image name="woman02" width="290" height="702"/>
+    </resources>
+</document>
